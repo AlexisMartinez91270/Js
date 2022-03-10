@@ -2,22 +2,22 @@
 // getters et setters d'un objet
 const personne = {
   // getter
-  get nom() {
+  get Nom() {
     console.log("getter nom");
-    return this._nom;
+    return this.nom;
   },
   // setter
-  set nom(unNom) {
+  set Nom(unNom) {
     console.log("setter nom");
-    this._nom = unNom;
+    this.nom = [unNom, 2 + unNom];
   },
 };
 // setter
-personne.nom = "Hercule";
+personne.Nom = "Hercule";
 // getter
-console.log(personne.nom);
+console.log(personne.Nom);
 // l'objet lui-même
 console.log("personne=", personne);
 // ça n'empêche pas d'accéder à la propriété [_nom] directement
-personne._nom = "xyz";
+personne.nom = "xyz";
 console.log("personne=", personne);

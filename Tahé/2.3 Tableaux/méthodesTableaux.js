@@ -17,7 +17,7 @@ tab.forEach(function (element) {
 show(3);
 // parcours du tableau avec for
 for (let i = 0; i < tab.length; i++) {
-  console.log("i=", i, "tab[i]=", tab[i]);
+  console.log("élément", i, "= ", tab[i], typeof tab[i]);
 }
 show(4);
 // modification tab[i]

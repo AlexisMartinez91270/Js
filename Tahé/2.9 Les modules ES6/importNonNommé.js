@@ -1,8 +1,8 @@
 "use strict";
 // import d'un objet exporté par défaut
-import export01 from "./export-01";
+import exportNonNommé from "./exportNonNommé";
 // utilisation de cet objet
-export01.do();
+exportNonNommé.do();
 // on peut importer un export par défaut sous n'importe quel nom
-import data from "./export-01";
+import data from "./exportNonNommé";
 console.log(data.data);
